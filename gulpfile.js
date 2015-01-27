@@ -1,6 +1,7 @@
 /**
  * Created by Ryan on 27/01/2015.
  */
+var gulp = require('gulp');
 var karma = require('gulp-karma');
 
 var testFiles = [];
@@ -23,5 +24,5 @@ gulp.task('test', function() {
 });
 
 gulp.task('autotest', function() {
-    return gulp.watch(['tests/spec/*.js'], ['test']);
+    return gulp.watch(['app/**/*.js', 'tests/spec/*.js'], ['test']);
 });

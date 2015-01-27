@@ -10,21 +10,21 @@ var app = angular.module('app', [
 ]);
 
 // service
-app.factory('peopleService', function() {
+app.factory('peopleService', function () {
 
-    var people = [{ Id: 1, Name: "Ryan Spears" }, { Id: 2, Name: "Max Spears" }];
+    var people = [{Id: 1, Name: "Ryan Spears"}, {Id: 2, Name: "Max Spears"}];
 
-    var getPeople = function() {
+    var getPeople = function () {
         return people;
     };
 
     return {
-        getPeople : getPeople
+        getPeople: getPeople
     }
 });
 
 // controller
-app.controller('peopleController', ['$scope', 'peopleService', function($scope, peopleService) {
+app.controller('peopleController', ['$scope', 'peopleService', function ($scope, peopleService) {
 
     var vm = this;
 
