@@ -26,7 +26,7 @@
 <![endif]-->
 
 <div ng-controller="peopleController as vm">Angular Testing with Gulp, Karma and Jasmine: v<span app-version></span>
-    <span>Number of people is {{peoples.length}}</span>
+    <span id="numberOfPeople">Number of people is {{peoples.length}}</span>
     <ul class="peopleDiv">
         <li class="bg-brand" data-ng-repeat="p in vm.people">
             <div class="front">

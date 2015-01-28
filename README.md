@@ -14,3 +14,6 @@ npm install gulp-karma --save-dev
 npm install karma-jasmine --save-dev
 npm install karma-phantomjs-launcher --save-dev
 npm install karma-spec-reporter --save-dev
+
+npm install protractor -g
+webdriver-manager update
