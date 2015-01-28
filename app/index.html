@@ -25,10 +25,10 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div ng-controller="peopleController as pc">Angular Testing with Gulp, Karma and Jasmine: v<span app-version></span>
+<div ng-controller="peopleController as vm">Angular Testing with Gulp, Karma and Jasmine: v<span app-version></span>
     <span>Number of people is {{peoples.length}}</span>
     <ul class="peopleDiv">
-        <li class="bg-brand" data-ng-repeat="p in pc.people">
+        <li class="bg-brand" data-ng-repeat="p in vm.people">
             <div class="front">
                 <h6>{{p.Name}}</h6>
             </div>
@@ -36,11 +36,8 @@
     </ul>
 </div>
 
-<!-- In production use:
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
--->
 <script src="../bower_components/angular/angular.js"></script>
-<script src="../node_modules/angular-route/angular-route.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
