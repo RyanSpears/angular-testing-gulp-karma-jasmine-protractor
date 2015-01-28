@@ -12,7 +12,7 @@ var app = angular.module('app', [
 // service
 app.factory('peopleService', function () {
 
-    var people = [{Id: 1, Name: "Ryan Spears"}, {Id: 2, Name: "Max Spears"}];
+    var people = [{Id: 1, Name: "Ryan Spears"}, {Id: 2, Name: "Max Spears"}, {Id: 3, Name: "Max Spears"}];
 
     var getPeople = function () {
         return people;

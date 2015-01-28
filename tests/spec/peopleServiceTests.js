@@ -9,7 +9,7 @@ describe("The peopleService ", function() {
     beforeEach(module('app'));
 
     it('should return three expense items', inject(function(peopleService){
-        expect(peopleService.getPeople().length).toBe(2);
+        expect(peopleService.getPeople().length).toBe(3);
     }));
 
     it('should return a taxi person called Ryan Spears', inject(function(peopleService) {
